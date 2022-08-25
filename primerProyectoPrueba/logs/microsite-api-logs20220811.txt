@@ -1,0 +1,10 @@
+2022-08-11 15:30:54.073 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-11 15:30:54.670 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-11 15:30:54.670 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-11 15:30:54.678 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-11 15:30:54.678 -03:00 [INF] Hosting environment: Development
+2022-08-11 15:30:54.678 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-11 15:30:56.563 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-11 15:30:57.289 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 736.7992ms
+2022-08-11 15:30:57.662 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-11 15:30:58.119 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 456.8104ms

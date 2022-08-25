@@ -1,0 +1,737 @@
+2022-08-17 11:42:41.607 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 11:42:42.337 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 11:42:42.337 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 11:42:42.344 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 11:42:42.344 -03:00 [INF] Hosting environment: Development
+2022-08-17 11:42:42.347 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 11:42:43.845 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 11:42:45.128 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1284.0188ms
+2022-08-17 11:42:45.477 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 11:42:45.859 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 382.4863ms
+2022-08-17 11:43:00.782 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-17 11:43:00.877 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 11:43:01.470 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-17 11:43:01.487 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 11:43:01.488 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 706.0423ms
+2022-08-17 13:47:31.579 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 13:47:32.415 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 13:47:32.415 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 13:47:32.424 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 13:47:32.425 -03:00 [INF] Hosting environment: Development
+2022-08-17 13:47:32.425 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 13:47:34.039 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 13:47:35.486 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1451.8443ms
+2022-08-17 13:47:35.937 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 13:47:36.566 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 629.0112ms
+2022-08-17 13:47:58.690 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-17 13:47:58.743 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 13:47:59.150 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-17 13:47:59.164 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 13:47:59.164 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 474.4049ms
+2022-08-17 13:49:18.146 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-17 13:49:18.310 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:49:19.035 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:49:19.098 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.Int16.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_7>d.MoveNext() in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/Program.cs:line 167
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:49:19.193 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 500 - text/plain;+charset=utf-8 1050.1460ms
+2022-08-17 13:50:34.542 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 13:50:35.164 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 13:50:35.165 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 13:50:35.171 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 13:50:35.172 -03:00 [INF] Hosting environment: Development
+2022-08-17 13:50:35.172 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 13:50:36.923 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 13:50:37.506 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 587.7532ms
+2022-08-17 13:50:37.921 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 13:50:38.305 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 384.0192ms
+2022-08-17 13:51:35.648 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/$page=1&pagesize=1 application/json 17
+2022-08-17 13:51:36.261 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:51:36.336 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/$page=1&pagesize=1 application/json 17 - 500 - text/plain;+charset=utf-8 687.6020ms
+2022-08-17 13:51:54.574 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 13:51:55.198 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 13:51:55.199 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 13:51:55.206 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 13:51:55.207 -03:00 [INF] Hosting environment: Development
+2022-08-17 13:51:55.208 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 13:51:56.669 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 13:51:57.401 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 742.8503ms
+2022-08-17 13:51:58.062 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 13:51:58.670 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 607.8175ms
+2022-08-17 13:52:14.704 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pagesize=1 application/json 17
+2022-08-17 13:52:15.371 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pagesize=1 application/json 17 - 200 - - 666.4086ms
+2022-08-17 13:52:46.672 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-17 13:52:46.692 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 13:52:46.766 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-17 13:52:46.782 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 13:52:46.782 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 110.4405ms
+2022-08-17 13:53:03.244 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pagesize=1 application/json 17
+2022-08-17 13:53:03.246 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:53:03.247 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:53:03.378 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&pagesize=1".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:53:03.482 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pagesize=1 application/json 17 - 400 - text/plain;+charset=utf-8 238.3822ms
+2022-08-17 13:53:19.540 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pagesize=5 application/json 17
+2022-08-17 13:53:19.541 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:53:19.541 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:53:19.592 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&pagesize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:53:19.594 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pagesize=5 application/json 17 - 400 - text/plain;+charset=utf-8 54.6315ms
+2022-08-17 13:53:28.693 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 application/json 17
+2022-08-17 13:53:28.694 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:53:28.694 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:53:28.750 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&pageSize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:53:28.752 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 application/json 17 - 400 - text/plain;+charset=utf-8 58.8391ms
+2022-08-17 13:54:05.854 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist application/json 17
+2022-08-17 13:54:05.891 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 13:54:06.556 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 13:54:06.616 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.Int16.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_7>d.MoveNext() in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/Program.cs:line 167
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteTask>g__ExecuteAwaited|58_0[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:54:06.684 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist application/json 17 - 500 - text/plain;+charset=utf-8 830.3822ms
+2022-08-17 13:54:30.666 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 13:54:31.394 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 13:54:31.394 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 13:54:31.402 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 13:54:31.404 -03:00 [INF] Hosting environment: Development
+2022-08-17 13:54:31.405 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 13:54:32.952 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 13:54:33.747 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 817.9383ms
+2022-08-17 13:54:34.373 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 13:54:34.862 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 489.5199ms
+2022-08-17 13:54:36.267 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 application/json 17
+2022-08-17 13:54:36.772 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:54:36.773 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:54:36.890 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&pageSize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:54:36.980 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 application/json 17 - 400 - text/plain;+charset=utf-8 713.0846ms
+2022-08-17 13:55:11.403 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 - -
+2022-08-17 13:55:11.406 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:55:11.407 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:55:11.481 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&pageSize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:55:11.484 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 - - - 400 - text/plain;+charset=utf-8 80.9953ms
+2022-08-17 13:55:38.495 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-17 13:55:38.495 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 13:55:38.589 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-17 13:55:38.606 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 13:55:38.607 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 111.9133ms
+2022-08-17 13:55:57.126 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 - -
+2022-08-17 13:55:57.127 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:55:57.127 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 13:55:57.179 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&pageSize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 13:55:57.181 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 - - - 400 - text/plain;+charset=utf-8 54.7700ms
+2022-08-17 13:57:58.160 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 13:57:58.886 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 13:57:58.887 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 13:57:58.895 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 13:57:58.895 -03:00 [INF] Hosting environment: Development
+2022-08-17 13:57:58.922 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 13:58:00.887 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 13:58:02.712 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1879.0049ms
+2022-08-17 13:58:03.435 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-17 13:58:03.596 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 13:58:04.688 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1091.9777ms
+2022-08-17 13:58:04.908 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:58:07.770 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 13:58:10.223 -03:00 [INF] Executed DbCommand (210ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 13:58:10.548 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:58:10.600 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 200 - application/json;+charset=utf-8 7164.3942ms
+2022-08-17 13:58:18.946 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/ - -
+2022-08-17 13:58:18.947 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:58:18.950 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 13:58:18.989 -03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 13:58:18.990 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:58:18.990 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/ - - - 200 - application/json;+charset=utf-8 44.7075ms
+2022-08-17 13:59:02.985 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/todolist application/json 47
+2022-08-17 13:59:02.986 -03:00 [INF] Executing endpoint 'HTTP: POST /todolist'
+2022-08-17 13:59:03.104 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 13:59:03.464 -03:00 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO todolist (completo, nombre)
+VALUES (@p0, @p1)
+RETURNING id;
+2022-08-17 13:59:03.686 -03:00 [INF] Writing value of type 'primerProyectoPrueba.modelos.Todo' with status code '201'.
+2022-08-17 13:59:03.692 -03:00 [INF] Executed endpoint 'HTTP: POST /todolist'
+2022-08-17 13:59:03.693 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/todolist application/json 47 - 201 - application/json;+charset=utf-8 707.8601ms
+2022-08-17 13:59:19.340 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-17 13:59:19.340 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:59:19.342 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 13:59:19.372 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 13:59:19.395 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/'
+2022-08-17 13:59:19.397 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 200 - application/json;+charset=utf-8 56.8779ms
+2022-08-17 13:59:53.993 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 13:59:54.597 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 13:59:54.598 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 13:59:54.604 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 13:59:54.605 -03:00 [INF] Hosting environment: Development
+2022-08-17 13:59:54.605 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 13:59:56.048 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 13:59:56.722 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 685.9608ms
+2022-08-17 13:59:57.284 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 13:59:57.715 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 431.1004ms
+2022-08-17 13:59:58.655 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-17 13:59:59.174 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/'
+2022-08-17 14:00:01.529 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:00:03.481 -03:00 [INF] Executed DbCommand (186ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 14:00:03.714 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/'
+2022-08-17 14:00:03.748 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 200 - application/json;+charset=utf-8 5093.0043ms
+2022-08-17 14:03:14.908 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:03:15.657 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:03:15.657 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:03:15.664 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:03:15.664 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:03:15.666 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:03:17.136 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:03:18.159 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1027.9311ms
+2022-08-17 14:03:18.628 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:03:19.015 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 386.9965ms
+2022-08-17 14:03:20.436 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 - -
+2022-08-17 14:03:21.044 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 14:03:21.045 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 14:03:21.173 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&pageSize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 14:03:21.277 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&pageSize=5 - - - 400 - text/plain;+charset=utf-8 840.6310ms
+2022-08-17 14:03:40.293 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1&&pageSize=5 - -
+2022-08-17 14:03:40.295 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 14:03:40.296 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 14:03:40.355 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1&&pageSize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 14:03:40.358 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1&&pageSize=5 - - - 400 - text/plain;+charset=utf-8 64.7119ms
+2022-08-17 14:03:53.835 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/$page=1 & pageSize=5 - -
+2022-08-17 14:03:53.836 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 14:03:53.836 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 14:03:53.887 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int id" from "$page=1 & pageSize=5".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method5(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 14:03:53.890 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/$page=1 & pageSize=5 - - - 400 - text/plain;+charset=utf-8 54.9462ms
+2022-08-17 14:05:08.448 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:05:09.190 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:05:09.191 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:05:09.197 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:05:09.197 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:05:09.197 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:05:10.763 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:05:12.751 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1878.7807ms
+2022-08-17 14:05:13.361 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:05:13.785 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 423.5780ms
+2022-08-17 14:05:15.902 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - -
+2022-08-17 14:05:16.428 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:18.566 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:05:20.289 -03:00 [INF] Executed DbCommand (199ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 14:05:20.539 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:20.572 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - - - 200 - application/json;+charset=utf-8 4669.6528ms
+2022-08-17 14:05:36.189 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-17 14:05:36.190 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:36.194 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:05:36.217 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 14:05:36.219 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:36.219 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 30.2546ms
+2022-08-17 14:05:54.119 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - -
+2022-08-17 14:05:54.120 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:54.226 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:05:54.233 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 14:05:54.233 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:54.234 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - - - 200 - application/json;+charset=utf-8 114.8891ms
+2022-08-17 14:05:59.062 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=5 - -
+2022-08-17 14:05:59.063 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:59.064 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:05:59.141 -03:00 [INF] Executed DbCommand (45ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_0 OFFSET @__p_0
+2022-08-17 14:05:59.145 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:05:59.145 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=5 - - - 200 - application/json;+charset=utf-8 83.3297ms
+2022-08-17 14:06:08.881 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - -
+2022-08-17 14:06:08.882 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:06:08.883 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:06:08.888 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_0 OFFSET @__p_0
+2022-08-17 14:06:08.889 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:06:08.889 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - - - 200 - application/json;+charset=utf-8 8.4194ms
+2022-08-17 14:06:47.075 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=4&pageSize=1 - -
+2022-08-17 14:06:47.083 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:06:47.084 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:06:47.088 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 14:06:47.112 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:06:47.112 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=4&pageSize=1 - - - 200 - application/json;+charset=utf-8 42.5254ms
+2022-08-17 14:12:24.338 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-17 14:12:24.343 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:12:24.344 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:12:24.473 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Required parameter "int page" was not provided from query string.
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.RequiredParameterNotProvided(HttpContext httpContext, String parameterTypeName, String parameterName, String source, Boolean shouldThrow)
+   at lambda_method3(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 28
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 14:12:24.576 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 400 - text/plain;+charset=utf-8 237.5989ms
+2022-08-17 14:24:23.646 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:24:24.736 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:24:24.737 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:24:24.756 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:24:24.756 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:24:24.757 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:24:26.561 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:24:27.813 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1255.8669ms
+2022-08-17 14:24:28.155 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:24:28.544 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 388.6403ms
+2022-08-17 14:27:32.768 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:27:33.587 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:27:33.588 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:27:33.595 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:27:33.646 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:27:33.647 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:27:35.124 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:27:35.894 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 778.0743ms
+2022-08-17 14:27:36.361 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:27:36.770 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 409.2873ms
+2022-08-17 14:28:06.625 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-17 14:28:06.667 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 14:28:07.192 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-17 14:28:07.203 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 14:28:07.204 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 578.7235ms
+2022-08-17 14:28:23.452 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-17 14:28:23.582 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - - 129.9597ms
+2022-08-17 14:30:29.913 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:30:30.612 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:30:30.613 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:30:30.621 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:30:30.623 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:30:30.624 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:30:32.436 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:30:33.045 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 602.0562ms
+2022-08-17 14:30:33.654 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:30:34.038 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 383.6086ms
+2022-08-17 14:30:39.540 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:30:39.687 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 0 - 146.8001ms
+2022-08-17 14:33:18.097 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:33:18.900 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:33:18.901 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:33:18.911 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:33:18.914 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:33:18.916 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:33:20.421 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:33:20.950 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 526.8558ms
+2022-08-17 14:33:21.347 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:33:21.765 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 418.1779ms
+2022-08-17 14:33:29.596 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:33:29.737 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 0 - 141.7337ms
+2022-08-17 14:34:27.801 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:34:28.459 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:34:28.460 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:34:28.466 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:34:28.466 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:34:28.466 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:34:30.018 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:34:30.628 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 614.6771ms
+2022-08-17 14:34:31.282 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:34:31.718 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 435.0175ms
+2022-08-17 14:34:37.153 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:34:37.305 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 0 - 151.3739ms
+2022-08-17 14:34:58.097 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:34:58.798 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:34:58.798 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:34:58.805 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:34:58.806 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:34:58.806 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:35:02.023 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:35:02.705 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 690.6339ms
+2022-08-17 14:35:03.244 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:35:03.748 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 503.9427ms
+2022-08-17 14:35:09.910 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:35:10.051 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 0 - 140.7150ms
+2022-08-17 14:35:38.482 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:35:39.108 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:35:39.109 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:35:39.115 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:35:39.116 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:35:39.117 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:35:40.591 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:35:41.161 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 573.6178ms
+2022-08-17 14:35:41.527 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:35:41.916 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 389.0799ms
+2022-08-17 14:35:47.017 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:35:47.151 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 0 - 134.4275ms
+2022-08-17 14:44:11.285 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:44:12.078 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:44:12.079 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:44:12.084 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:44:12.085 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:44:12.085 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:44:13.584 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:44:14.775 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1200.9349ms
+2022-08-17 14:44:15.125 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:44:15.498 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 373.2231ms
+2022-08-17 14:44:23.511 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:44:23.724 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: error
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 41
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 14:44:23.813 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 500 - text/plain;+charset=utf-8 301.5387ms
+2022-08-17 14:47:04.500 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:47:05.209 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:47:05.209 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:47:05.215 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:47:05.215 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:47:05.215 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:47:06.758 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:47:08.115 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1367.3254ms
+2022-08-17 14:47:08.450 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:47:08.886 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 434.7314ms
+2022-08-17 14:47:14.961 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:47:15.253 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 14:47:15.270 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 500 - text/plain;+charset=utf-8 308.5694ms
+2022-08-17 14:48:59.708 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-17 14:48:59.731 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 14:49:00.131 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-17 14:49:00.143 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 14:49:00.143 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 434.7534ms
+2022-08-17 14:49:19.899 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:49:20.286 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/compelete'
+2022-08-17 14:49:22.743 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:49:24.429 -03:00 [INF] Executed DbCommand (170ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+WHERE NOT (t.completo)
+2022-08-17 14:49:24.545 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/compelete'
+2022-08-17 14:49:24.615 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 - application/json;+charset=utf-8 4716.4007ms
+2022-08-17 14:49:40.737 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - -
+2022-08-17 14:49:40.738 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-17 14:49:40.766 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 14:49:40.880 -03:00 [INF] Executed DbCommand (63ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-17 14:49:41.015 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-17 14:49:41.022 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - - - 200 - application/json;+charset=utf-8 278.8545ms
+2022-08-17 14:53:20.030 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:53:20.747 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:53:20.748 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:53:20.756 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:53:20.758 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:53:20.759 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:53:22.166 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:53:22.629 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 466.8087ms
+2022-08-17 14:53:22.973 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:53:23.500 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 525.7696ms
+2022-08-17 14:53:33.830 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=3&pageSize=3 - -
+2022-08-17 14:53:34.011 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 26
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 41
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 14:53:34.088 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=3&pageSize=3 - - - 500 - text/plain;+charset=utf-8 257.4397ms
+2022-08-17 14:54:41.484 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 50
+2022-08-17 14:54:41.502 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 14:54:41.544 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-17 14:54:41.550 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 14:54:41.551 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 50 - 401 0 - 66.7910ms
+2022-08-17 14:57:33.966 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 14:57:34.698 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 14:57:34.698 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 14:57:34.706 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 14:57:34.706 -03:00 [INF] Hosting environment: Development
+2022-08-17 14:57:34.706 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 14:57:36.398 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 14:57:36.925 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 530.8925ms
+2022-08-17 14:57:37.283 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 14:57:37.691 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 407.5975ms
+2022-08-17 14:57:52.256 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 50
+2022-08-17 14:57:52.286 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 14:57:52.335 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-17 14:57:52.343 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 14:57:52.344 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 50 - 401 0 - 87.8714ms
+2022-08-17 14:58:05.073 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 14:58:05.209 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 0 - 136.2841ms
+2022-08-17 15:09:27.001 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 15:09:27.591 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 15:09:27.592 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 15:09:27.597 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 15:09:27.597 -03:00 [INF] Hosting environment: Development
+2022-08-17 15:09:27.597 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 15:09:29.055 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 15:09:29.498 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 451.1929ms
+2022-08-17 15:09:29.836 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 15:09:30.201 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 364.4861ms
+2022-08-17 15:09:35.749 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 15:09:35.921 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: 404
+   at primerProyectoPrueba.middleware.AutorizartionCustomMiddleWare.Invoke(HttpContext context) in /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/middleware/AutorizartionCustomMiddleWare.cs:line 41
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-17 15:09:35.989 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 500 - text/plain;+charset=utf-8 239.4014ms
+2022-08-17 15:11:31.860 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 15:11:32.470 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 15:11:32.470 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 15:11:32.477 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 15:11:32.477 -03:00 [INF] Hosting environment: Development
+2022-08-17 15:11:32.477 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 15:11:33.889 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 15:11:34.424 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 443.3736ms
+2022-08-17 15:11:34.780 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 15:11:35.359 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 578.9662ms
+2022-08-17 15:18:12.139 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 15:18:13.417 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 15:18:13.420 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 15:18:13.453 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 15:18:13.454 -03:00 [INF] Hosting environment: Development
+2022-08-17 15:18:13.459 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 15:18:14.846 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 15:18:15.803 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 955.5762ms
+2022-08-17 15:18:16.381 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 15:18:16.792 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 410.9143ms
+2022-08-17 15:18:23.953 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 15:18:24.095 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 404 0 - 142.0134ms
+2022-08-17 15:19:06.571 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 15:19:07.159 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 15:19:07.159 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 15:19:07.164 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 15:19:07.164 -03:00 [INF] Hosting environment: Development
+2022-08-17 15:19:07.164 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 15:19:08.639 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 15:19:09.075 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 443.3143ms
+2022-08-17 15:19:09.417 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 15:19:09.837 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 418.8159ms
+2022-08-17 15:19:15.175 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 15:19:15.294 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 500 0 - 119.0461ms
+2022-08-17 15:24:00.806 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 15:24:01.380 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 15:24:01.381 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 15:24:01.386 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 15:24:01.386 -03:00 [INF] Hosting environment: Development
+2022-08-17 15:24:01.386 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 15:24:02.788 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 15:24:03.231 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 449.9220ms
+2022-08-17 15:24:03.550 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 15:24:03.912 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 362.0849ms
+2022-08-17 15:24:15.534 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 50
+2022-08-17 15:24:15.572 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 15:24:15.638 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-17 15:24:15.653 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 15:24:15.655 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 50 - 401 0 - 120.2614ms
+2022-08-17 15:24:26.511 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 15:24:26.626 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 404 0 - 114.9863ms
+2022-08-17 15:31:31.163 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 50
+2022-08-17 15:31:31.163 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 15:31:31.164 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-17 15:31:31.164 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 15:31:31.165 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 50 - 401 0 - 1.7542ms
+2022-08-17 15:31:40.953 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/todolist application/json 55
+2022-08-17 15:31:41.005 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/todolist application/json 55 - 404 0 - 51.8395ms
+2022-08-17 15:34:24.036 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 15:34:24.714 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 15:34:24.715 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 15:34:24.727 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 15:34:24.728 -03:00 [INF] Hosting environment: Development
+2022-08-17 15:34:24.728 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 15:34:26.113 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 15:34:26.596 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 485.7971ms
+2022-08-17 15:34:26.934 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 15:34:27.304 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 369.8316ms
+2022-08-17 15:34:50.725 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 15:34:50.839 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 404 0 - 113.5803ms
+2022-08-17 15:35:06.295 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-17 15:35:06.320 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-17 15:35:06.680 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-17 15:35:06.691 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-17 15:35:06.691 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 396.1363ms
+2022-08-17 15:35:34.723 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/6 - -
+2022-08-17 15:35:34.876 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 15:35:36.629 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 15:35:38.161 -03:00 [INF] Executed DbCommand (167ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+WHERE t.id = @__p_0
+LIMIT 1
+2022-08-17 15:35:38.224 -03:00 [INF] Executing result with status code '404'.
+2022-08-17 15:35:38.224 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/{id}'
+2022-08-17 15:35:38.259 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/6 - - - 404 0 - 3539.3979ms
+2022-08-17 15:35:52.566 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist/compelete - -
+2022-08-17 15:35:52.567 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist/compelete'
+2022-08-17 15:35:52.653 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-17 15:35:52.762 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+WHERE t.completo
+2022-08-17 15:35:52.924 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist/compelete'
+2022-08-17 15:35:52.924 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist/compelete - - - 200 - application/json;+charset=utf-8 358.5938ms
+2022-08-17 16:52:31.200 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 16:52:32.634 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-17 16:52:32.660 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-17 16:52:32.666 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 16:52:32.667 -03:00 [INF] Hosting environment: Development
+2022-08-17 16:52:32.667 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-17 16:52:34.165 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-17 16:52:35.258 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1111.4124ms
+2022-08-17 16:52:35.902 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-17 16:52:36.784 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 881.5430ms

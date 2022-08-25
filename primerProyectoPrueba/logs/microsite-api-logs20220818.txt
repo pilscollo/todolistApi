@@ -1,0 +1,1601 @@
+2022-08-18 10:16:20.794 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:16:21.416 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:16:21.417 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:16:21.442 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:16:21.445 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:16:21.445 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:16:23.230 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:16:24.375 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1151.0859ms
+2022-08-18 10:16:24.811 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:16:25.318 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 506.4912ms
+2022-08-18 10:16:41.524 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:16:41.548 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:16:41.954 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:16:41.968 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:16:41.969 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 444.9606ms
+2022-08-18 10:17:12.513 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 10:17:12.670 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:17:14.707 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:17:16.175 -03:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:17:16.531 -03:00 [INF] Executed DbCommand (48ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 10:17:16.706 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:17:16.740 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 4230.1212ms
+2022-08-18 10:22:07.647 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:22:08.468 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:22:08.468 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:22:08.477 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:22:08.478 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:22:08.478 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:22:09.767 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:22:10.369 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 594.6796ms
+2022-08-18 10:22:10.839 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:22:11.261 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 421.6244ms
+2022-08-18 10:22:26.825 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:22:26.853 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:22:27.216 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:22:27.225 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:22:27.225 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 399.8306ms
+2022-08-18 10:22:53.701 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 10:22:53.857 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:22:55.803 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:22:57.095 -03:00 [INF] Executed DbCommand (140ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:22:57.415 -03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 10:22:57.559 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:22:57.582 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 3884.9850ms
+2022-08-18 10:25:47.953 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:25:48.619 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:25:48.619 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:25:48.624 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:25:48.625 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:25:48.625 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:25:50.478 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:25:50.992 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 518.8374ms
+2022-08-18 10:25:51.482 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:25:51.833 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 350.8546ms
+2022-08-18 10:26:07.028 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:26:07.062 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:26:07.481 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:26:07.496 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:26:07.496 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 468.3695ms
+2022-08-18 10:26:39.767 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 10:26:39.914 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:26:41.807 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:26:43.099 -03:00 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:26:43.401 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 10:26:43.538 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:26:43.568 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 3804.7692ms
+2022-08-18 10:29:00.815 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - -
+2022-08-18 10:29:00.828 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:29:00.832 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:29:00.891 -03:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:29:00.922 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_0 OFFSET @__p_0
+2022-08-18 10:29:00.962 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:29:00.971 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - - - 200 - application/json;+charset=utf-8 155.7914ms
+2022-08-18 10:29:33.031 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:29:33.644 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:29:33.645 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:29:33.651 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:29:33.651 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:29:33.651 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:29:35.062 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:29:35.761 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 697.4926ms
+2022-08-18 10:29:36.236 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:29:36.601 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 364.6271ms
+2022-08-18 10:29:53.599 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:29:53.626 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:29:53.994 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:29:54.004 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:29:54.004 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 405.3326ms
+2022-08-18 10:30:19.055 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - -
+2022-08-18 10:30:19.217 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:30:21.119 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:30:22.460 -03:00 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:30:22.753 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:30:22.834 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - - - 404 0 - 3778.6386ms
+2022-08-18 10:30:52.162 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - -
+2022-08-18 10:30:52.213 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:30:52.216 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:30:52.228 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:30:52.281 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:30:52.329 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - - - 404 0 - 167.0299ms
+2022-08-18 10:31:46.533 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:31:47.254 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:31:47.255 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:31:47.261 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:31:47.261 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:31:47.261 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:31:48.674 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:31:49.383 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 704.4676ms
+2022-08-18 10:31:49.825 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:31:50.316 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 490.5069ms
+2022-08-18 10:32:14.098 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:32:14.127 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:32:14.540 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:32:14.555 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:32:14.556 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 457.2211ms
+2022-08-18 10:32:46.724 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 10:32:46.873 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:32:48.840 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:32:50.084 -03:00 [INF] Executed DbCommand (142ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:32:50.294 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:32:50.377 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 404 0 - 3652.8906ms
+2022-08-18 10:33:54.361 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:33:55.107 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:33:55.109 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:33:55.117 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:33:55.117 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:33:55.117 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:33:56.579 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:33:57.141 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 568.0321ms
+2022-08-18 10:33:57.514 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:33:57.924 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 410.0234ms
+2022-08-18 10:34:13.608 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:34:13.634 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:34:13.990 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:34:14.000 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:34:14.001 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 392.5474ms
+2022-08-18 10:34:36.599 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 10:34:36.752 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:34:38.844 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:34:40.140 -03:00 [INF] Executed DbCommand (143ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:34:40.471 -03:00 [INF] Executed DbCommand (34ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 10:34:40.617 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:34:40.640 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 4040.8942ms
+2022-08-18 10:36:16.525 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:36:17.265 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:36:17.265 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:36:17.271 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:36:17.271 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:36:17.271 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:36:18.664 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:36:19.176 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 516.1871ms
+2022-08-18 10:36:19.649 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:36:20.078 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 429.3053ms
+2022-08-18 10:36:36.577 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:36:36.604 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:36:36.967 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:36:36.977 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:36:36.978 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 401.1540ms
+2022-08-18 10:37:00.198 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 10:37:00.358 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:37:03.289 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:37:04.741 -03:00 [INF] Executed DbCommand (168ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:37:05.072 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 10:37:05.214 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:37:05.240 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 5046.8568ms
+2022-08-18 10:40:42.950 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 10:40:43.745 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 10:40:43.746 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 10:40:43.754 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:40:43.801 -03:00 [INF] Hosting environment: Development
+2022-08-18 10:40:43.802 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 10:40:45.212 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 10:40:45.744 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 538.7832ms
+2022-08-18 10:40:46.160 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 10:40:46.529 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 368.7162ms
+2022-08-18 10:41:00.405 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 10:41:00.439 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 10:41:00.894 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 10:41:00.911 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 10:41:00.912 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 507.6126ms
+2022-08-18 10:41:27.091 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 10:41:27.274 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 10:41:29.166 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 10:41:30.630 -03:00 [INF] Executed DbCommand (147ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 10:41:30.951 -03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 10:41:31.095 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 10:41:31.118 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 4027.6140ms
+2022-08-18 11:33:34.513 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 11:33:35.857 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 11:33:35.858 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 11:33:35.865 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 11:33:35.865 -03:00 [INF] Hosting environment: Development
+2022-08-18 11:33:35.866 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 11:33:37.340 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 11:33:38.574 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1240.5075ms
+2022-08-18 11:33:39.139 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 11:33:40.031 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 884.6614ms
+2022-08-18 12:21:44.265 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:21:44.316 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:21:44.325 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:21:44.614 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 348.3893ms
+2022-08-18 12:21:58.163 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:21:58.163 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:21:58.164 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:21:58.246 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 83.3114ms
+2022-08-18 12:22:05.708 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:22:05.708 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:22:05.708 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:22:05.788 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 80.7703ms
+2022-08-18 12:22:37.550 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:22:37.551 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:22:37.551 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:22:37.639 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 88.8303ms
+2022-08-18 12:22:42.783 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:22:42.784 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:22:42.784 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:22:42.862 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 78.3090ms
+2022-08-18 12:23:17.486 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:23:17.487 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:23:17.487 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:23:17.617 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 130.3902ms
+2022-08-18 12:24:17.434 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 5
+2022-08-18 12:24:17.560 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 5 - 404 0 - 126.0900ms
+2022-08-18 12:27:45.742 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:27:45.747 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:27:45.747 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:27:45.822 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 83.7429ms
+2022-08-18 12:27:59.197 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:27:59.197 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:27:59.197 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:27:59.249 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 52.0822ms
+2022-08-18 12:29:45.009 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:29:45.009 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:29:45.009 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:29:45.070 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 61.0330ms
+2022-08-18 12:30:19.700 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 0
+2022-08-18 12:30:19.765 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 0 - 404 0 - 65.3085ms
+2022-08-18 12:30:28.248 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 0
+2022-08-18 12:30:28.362 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 0 - 404 0 - 114.2646ms
+2022-08-18 12:31:38.233 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 12:31:38.250 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 12:31:38.250 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 12:31:38.322 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 89.2483ms
+2022-08-18 12:33:26.261 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 12:33:26.333 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 404 0 - 71.4461ms
+2022-08-18 12:33:36.634 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 12:33:36.699 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 404 0 - 64.9718ms
+2022-08-18 12:44:57.632 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 37
+2022-08-18 12:44:57.726 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 37 - 404 0 - 93.8548ms
+2022-08-18 12:45:23.134 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 44
+2022-08-18 12:45:23.210 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 44 - 404 0 - 75.9400ms
+2022-08-18 12:45:36.295 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 44
+2022-08-18 12:45:36.348 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 44 - 404 0 - 52.6901ms
+2022-08-18 13:53:00.703 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 13:53:01.774 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 13:53:01.775 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 13:53:01.783 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 13:53:01.785 -03:00 [INF] Hosting environment: Development
+2022-08-18 13:53:01.787 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 13:53:03.248 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 13:53:05.224 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1990.3543ms
+2022-08-18 13:53:05.617 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 13:53:06.121 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 503.2134ms
+2022-08-18 13:58:35.677 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 13:58:37.548 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 13:58:37.548 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 13:58:37.554 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 13:58:37.554 -03:00 [INF] Hosting environment: Development
+2022-08-18 13:58:37.555 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 13:58:39.281 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 13:58:41.502 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 2197.0209ms
+2022-08-18 13:58:42.167 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 13:58:43.123 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 954.3451ms
+2022-08-18 13:59:27.196 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 13:59:28.337 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 13:59:28.337 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 13:59:28.344 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 13:59:28.344 -03:00 [INF] Hosting environment: Development
+2022-08-18 13:59:28.344 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 13:59:29.893 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 13:59:31.093 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1205.2391ms
+2022-08-18 13:59:31.448 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 13:59:32.300 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 851.4475ms
+2022-08-18 13:59:37.777 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 50
+2022-08-18 13:59:37.786 -03:00 [INF] No CORS policy found for the specified request.
+2022-08-18 13:59:38.098 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 50 - 404 0 - 320.0845ms
+2022-08-18 14:00:29.333 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:00:30.335 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:00:30.337 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:00:30.351 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:00:30.351 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:00:30.351 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:00:32.055 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:00:33.299 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1249.0975ms
+2022-08-18 14:00:33.895 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:00:34.612 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 687.7901ms
+2022-08-18 14:09:32.788 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 51
+2022-08-18 14:09:32.801 -03:00 [INF] No CORS policy found for the specified request.
+2022-08-18 14:09:33.422 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 51 - 404 0 - 634.4482ms
+2022-08-18 14:10:14.053 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 51
+2022-08-18 14:10:14.053 -03:00 [INF] No CORS policy found for the specified request.
+2022-08-18 14:10:14.114 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 51 - 404 0 - 60.9552ms
+2022-08-18 14:11:25.928 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:11:27.030 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:11:27.030 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:11:27.037 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:11:27.038 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:11:27.038 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:11:28.694 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:11:30.126 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1427.9892ms
+2022-08-18 14:11:30.775 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:11:31.487 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 711.5829ms
+2022-08-18 14:12:17.937 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 47
+2022-08-18 14:12:17.945 -03:00 [INF] CORS policy execution failed.
+2022-08-18 14:12:17.945 -03:00 [INF] Request origin https://localhost:7154 does not have permission to access the resource.
+2022-08-18 14:12:17.973 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:12:18.840 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:12:18.875 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:12:18.876 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 47 - 200 - application/json;+charset=utf-8 938.6912ms
+2022-08-18 14:12:48.292 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 50
+2022-08-18 14:12:48.293 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:12:48.774 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 50 - 404 0 - 482.3132ms
+2022-08-18 14:13:14.632 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 50
+2022-08-18 14:13:14.632 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:13:14.696 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin text/plain;charset=UTF-8 50 - 404 0 - 64.4685ms
+2022-08-18 14:13:21.737 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 14:13:21.737 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:13:21.738 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:13:21.742 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:13:21.817 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 79.9161ms
+2022-08-18 14:13:32.718 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 14:13:32.719 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:13:32.719 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:13:32.719 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:13:32.801 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 82.6804ms
+2022-08-18 14:13:46.809 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin - 0
+2022-08-18 14:13:46.810 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:13:46.810 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:13:46.811 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:13:46.894 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin - 0 - 404 0 - 84.4229ms
+2022-08-18 14:17:32.687 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/loggin application/json 49
+2022-08-18 14:17:32.999 -03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2022-08-18 14:17:33.000 -03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2022-08-18 14:17:33.000 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/loggin application/json 49 - 405 0 - 312.6997ms
+2022-08-18 14:17:50.654 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 49
+2022-08-18 14:17:50.654 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:17:50.655 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:17:50.657 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:17:50.658 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 49 - 200 - application/json;+charset=utf-8 4.3355ms
+2022-08-18 14:19:12.043 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5058/loggin application/json 49
+2022-08-18 14:19:12.051 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:19:12.051 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:19:12.052 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:19:12.052 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5058/loggin application/json 49 - 200 - application/json;+charset=utf-8 9.4565ms
+2022-08-18 14:19:34.093 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5058/loggin text/plain;charset=UTF-8 50
+2022-08-18 14:19:34.093 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:19:34.178 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5058/loggin text/plain;charset=UTF-8 50 - 404 0 - 85.3163ms
+2022-08-18 14:19:42.153 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5058/loggin text/plain;charset=UTF-8 50
+2022-08-18 14:19:42.154 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:19:42.212 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5058/loggin text/plain;charset=UTF-8 50 - 404 0 - 58.6751ms
+2022-08-18 14:23:35.000 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5058/loggin - -
+2022-08-18 14:23:35.001 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:23:35.002 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5058/loggin - - - 204 - - 5.7812ms
+2022-08-18 14:25:10.897 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:25:10.897 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:25:10.898 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.6678ms
+2022-08-18 14:25:18.386 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:25:18.387 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:25:18.387 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4422ms
+2022-08-18 14:27:36.935 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 49
+2022-08-18 14:27:36.935 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:27:36.936 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:27:36.937 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:27:36.951 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 49 - 200 - application/json;+charset=utf-8 16.7347ms
+2022-08-18 14:28:27.102 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:28:28.177 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:28:28.177 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:28:28.183 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:28:28.185 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:28:28.197 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:28:29.652 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:28:30.980 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1293.0247ms
+2022-08-18 14:28:31.488 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:28:32.288 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 791.0738ms
+2022-08-18 14:30:03.240 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:30:03.251 -03:00 [INF] CORS policy execution failed.
+2022-08-18 14:30:03.251 -03:00 [INF] Request origin http://127.0.0.1:5500 does not have permission to access the resource.
+2022-08-18 14:30:03.253 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 13.5179ms
+2022-08-18 14:31:05.326 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:31:06.826 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:31:06.827 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:31:06.840 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:31:06.868 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:31:06.868 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:31:08.336 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:31:10.196 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1888.1305ms
+2022-08-18 14:31:10.753 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:31:11.718 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 964.7258ms
+2022-08-18 14:31:16.997 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:31:17.007 -03:00 [INF] CORS policy execution failed.
+2022-08-18 14:31:17.008 -03:00 [INF] Request origin http://127.0.0.1:5500 does not have permission to access the resource.
+2022-08-18 14:31:17.009 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 11.9837ms
+2022-08-18 14:31:59.247 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:32:00.624 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:32:00.625 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:32:00.643 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:32:00.643 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:32:00.644 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:32:02.654 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:32:02.842 -03:00 [INF] No CORS policy found for the specified request.
+2022-08-18 14:32:04.121 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 404 0 - 1491.6207ms
+2022-08-18 14:32:52.031 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:32:52.698 -03:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Cors.Infrastructure.ICorsService' while attempting to activate 'Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-08-18 14:34:03.437 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:34:04.609 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:34:04.610 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:34:04.618 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:34:04.619 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:34:04.619 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:34:06.334 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:34:07.533 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1203.6531ms
+2022-08-18 14:34:08.100 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:34:08.875 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 775.1580ms
+2022-08-18 14:34:11.449 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:34:11.726 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 404 0 - 276.4936ms
+2022-08-18 14:38:00.242 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:38:01.838 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:38:01.839 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:38:01.846 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:38:01.847 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:38:01.850 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:38:04.249 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:38:06.092 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1864.8640ms
+2022-08-18 14:38:06.761 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:38:07.501 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 738.9288ms
+2022-08-18 14:38:09.864 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:38:09.872 -03:00 [INF] No CORS policy found for the specified request.
+2022-08-18 14:38:10.064 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 404 0 - 200.5734ms
+2022-08-18 14:38:21.229 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:38:21.230 -03:00 [INF] No CORS policy found for the specified request.
+2022-08-18 14:38:21.351 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 404 0 - 121.4693ms
+2022-08-18 14:40:08.173 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:40:09.875 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:40:09.876 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:40:09.883 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:40:09.883 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:40:09.891 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:40:11.522 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:40:13.166 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1693.4714ms
+2022-08-18 14:40:13.666 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:40:14.536 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 729.0955ms
+2022-08-18 14:40:15.595 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:40:15.605 -03:00 [INF] No CORS policy found for the specified request.
+2022-08-18 14:40:15.901 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 404 0 - 306.3956ms
+2022-08-18 14:40:59.376 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:41:00.988 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:41:00.989 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:41:00.996 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:41:00.997 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:41:00.997 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:41:02.783 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:41:04.624 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1748.1821ms
+2022-08-18 14:41:05.314 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:41:06.259 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 945.4805ms
+2022-08-18 14:41:08.212 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:41:08.221 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:41:08.225 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 12.3711ms
+2022-08-18 14:41:08.229 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:41:08.229 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:41:08.262 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:41:09.125 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:41:09.136 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:41:09.138 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 908.8952ms
+2022-08-18 14:48:15.639 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:48:15.641 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:48:15.641 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 2.4611ms
+2022-08-18 14:48:15.650 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:48:15.651 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:48:15.651 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:48:15.652 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:48:15.652 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:48:15.653 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 2.2711ms
+2022-08-18 14:48:58.613 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:48:58.613 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:48:58.614 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5926ms
+2022-08-18 14:48:58.623 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:48:58.624 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:48:58.624 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:48:58.625 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:48:58.625 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:48:58.625 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 2.0412ms
+2022-08-18 14:51:32.299 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 14:51:32.442 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 404 0 - 142.3717ms
+2022-08-18 14:52:32.678 -03:00 [INF] User profile is available. Using '/Users/replace/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-18 14:52:34.088 -03:00 [INF] Now listening on: https://localhost:7154
+2022-08-18 14:52:34.089 -03:00 [INF] Now listening on: http://localhost:5058
+2022-08-18 14:52:34.127 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:52:34.127 -03:00 [INF] Hosting environment: Development
+2022-08-18 14:52:34.127 -03:00 [INF] Content root path: /Users/replace/Desktop/pilar/primerProyectoPrueba/primerProyectoPrueba/
+2022-08-18 14:52:35.599 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/index.html - -
+2022-08-18 14:52:36.985 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 1279.3310ms
+2022-08-18 14:52:37.545 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - -
+2022-08-18 14:52:38.213 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 668.6689ms
+2022-08-18 14:52:39.881 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:52:39.890 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:52:39.893 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 11.9696ms
+2022-08-18 14:52:39.898 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:52:39.898 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:52:39.927 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:52:40.694 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:52:40.721 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:52:40.722 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 823.5627ms
+2022-08-18 14:53:04.065 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 14:53:04.363 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 14:53:08.971 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 14:53:11.632 -03:00 [INF] Executed DbCommand (235ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 14:53:12.361 -03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 14:53:12.758 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 14:53:12.944 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 8879.1560ms
+2022-08-18 14:54:01.521 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:54:01.527 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:01.527 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 6.0867ms
+2022-08-18 14:54:01.537 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:54:01.537 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:01.538 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:54:01.539 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:54:01.539 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:54:01.539 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 2.4122ms
+2022-08-18 14:54:01.549 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 14:54:01.549 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:01.550 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 1.4591ms
+2022-08-18 14:54:01.557 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist application/json -
+2022-08-18 14:54:01.557 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:01.767 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist application/json - - 404 0 - 210.0025ms
+2022-08-18 14:54:09.016 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:54:09.017 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:09.017 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4723ms
+2022-08-18 14:54:09.027 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:54:09.027 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:09.027 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:54:09.028 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:54:09.029 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:54:09.029 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 2.2956ms
+2022-08-18 14:54:09.041 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 14:54:09.041 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:09.041 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4260ms
+2022-08-18 14:54:09.047 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist application/json -
+2022-08-18 14:54:09.047 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:54:09.139 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist application/json - - 404 0 - 91.8283ms
+2022-08-18 14:56:43.030 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:56:43.031 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:56:43.032 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 7.0276ms
+2022-08-18 14:56:43.041 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:56:43.041 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:56:43.041 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:56:43.042 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:56:43.042 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:56:43.042 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.9358ms
+2022-08-18 14:56:43.055 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 14:56:43.055 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:56:43.055 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.5276ms
+2022-08-18 14:56:43.065 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist application/json -
+2022-08-18 14:56:43.066 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:56:43.150 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist application/json - - 404 0 - 85.0952ms
+2022-08-18 14:57:05.205 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 14:57:05.209 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:57:05.209 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 7.1111ms
+2022-08-18 14:57:05.294 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 14:57:05.295 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:57:05.295 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 14:57:05.295 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 14:57:05.295 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 14:57:05.296 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.3759ms
+2022-08-18 14:57:05.349 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 14:57:05.349 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:57:05.349 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.3368ms
+2022-08-18 14:57:05.359 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist application/json -
+2022-08-18 14:57:05.359 -03:00 [INF] CORS policy execution successful.
+2022-08-18 14:57:05.435 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist application/json - - 404 0 - 75.4200ms
+2022-08-18 15:02:24.027 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:02:24.027 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:02:24.028 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5651ms
+2022-08-18 15:02:24.031 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:02:24.031 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:02:24.032 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:02:24.032 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:02:24.032 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:02:24.033 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.4627ms
+2022-08-18 15:02:24.044 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:02:24.044 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:02:24.045 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4449ms
+2022-08-18 15:02:24.051 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist application/json -
+2022-08-18 15:02:24.051 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:02:24.112 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist application/json - - 404 0 - 61.3753ms
+2022-08-18 15:05:50.409 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:05:50.410 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:05:50.410 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4506ms
+2022-08-18 15:05:50.416 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:05:50.416 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:05:50.416 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:05:50.417 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:05:50.417 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:05:50.417 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.3482ms
+2022-08-18 15:05:50.431 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:05:50.431 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:05:50.431 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4350ms
+2022-08-18 15:05:50.441 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:05:50.441 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:05:50.517 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 76.0617ms
+2022-08-18 15:06:42.033 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:06:42.033 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:06:42.034 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5111ms
+2022-08-18 15:06:42.040 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:06:42.040 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:06:42.040 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:06:42.041 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:06:42.041 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:06:42.041 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.2804ms
+2022-08-18 15:06:42.052 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=5 - -
+2022-08-18 15:06:42.052 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:06:42.053 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=5 - - - 204 - - 0.4453ms
+2022-08-18 15:06:42.068 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - -
+2022-08-18 15:06:42.068 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:06:42.149 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=5 - - - 404 0 - 85.5350ms
+2022-08-18 15:08:28.840 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:08:28.841 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:08:28.841 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4416ms
+2022-08-18 15:08:28.851 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:08:28.851 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:08:28.851 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:08:28.852 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:08:28.852 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:08:28.852 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.3932ms
+2022-08-18 15:08:45.540 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:08:45.540 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:08:45.541 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4716ms
+2022-08-18 15:08:45.550 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:08:45.550 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:08:45.550 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:08:45.551 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:08:45.551 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:08:45.551 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.1236ms
+2022-08-18 15:10:04.459 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:10:04.463 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:10:04.464 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 4.5706ms
+2022-08-18 15:10:04.469 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:10:04.470 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:10:04.470 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:10:04.471 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:10:04.471 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:10:04.471 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.8833ms
+2022-08-18 15:10:27.084 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:10:27.084 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:10:27.084 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5079ms
+2022-08-18 15:10:27.094 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:10:27.094 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:10:27.095 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:10:27.095 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:10:27.095 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:10:27.096 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.4559ms
+2022-08-18 15:10:27.114 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 15:10:27.115 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:10:27.115 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=1 - - - 204 - - 0.6752ms
+2022-08-18 15:10:27.124 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 15:10:27.124 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:10:27.196 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 404 0 - 71.1871ms
+2022-08-18 15:11:25.342 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:11:25.343 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:11:25.343 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4887ms
+2022-08-18 15:11:25.349 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:11:25.349 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:11:25.349 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:11:25.350 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:11:25.350 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:11:25.350 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.1369ms
+2022-08-18 15:12:00.663 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:12:00.663 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:00.664 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 10.0071ms
+2022-08-18 15:12:00.669 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:12:00.669 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:00.670 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:00.670 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:12:00.670 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:00.671 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.7526ms
+2022-08-18 15:12:00.703 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 15:12:00.703 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:00.704 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=1 - - - 204 - - 0.5235ms
+2022-08-18 15:12:00.709 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 15:12:00.709 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:00.787 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 404 0 - 77.7222ms
+2022-08-18 15:12:18.358 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:12:18.358 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:18.358 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.3530ms
+2022-08-18 15:12:18.415 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:12:18.416 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:18.416 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:18.416 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:12:18.417 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:18.417 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 4.6146ms
+2022-08-18 15:12:18.429 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:12:18.429 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:18.429 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.5382ms
+2022-08-18 15:12:18.436 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:12:18.436 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:18.510 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 73.8715ms
+2022-08-18 15:12:37.892 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:12:37.892 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:37.893 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5020ms
+2022-08-18 15:12:37.923 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:12:37.923 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:37.923 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:37.924 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:12:37.924 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:37.924 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.5038ms
+2022-08-18 15:12:37.936 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:12:37.936 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:37.936 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.6516ms
+2022-08-18 15:12:37.943 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:12:37.943 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:38.033 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 90.4213ms
+2022-08-18 15:12:48.506 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:12:48.506 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:48.507 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.7000ms
+2022-08-18 15:12:48.522 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:12:48.522 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:48.522 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:48.522 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:12:48.523 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:48.523 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.2736ms
+2022-08-18 15:12:48.536 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:12:48.537 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:48.537 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.6024ms
+2022-08-18 15:12:48.543 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:12:48.543 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:48.615 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 72.0421ms
+2022-08-18 15:12:53.156 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:12:53.156 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:53.156 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5163ms
+2022-08-18 15:12:53.158 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:12:53.158 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:53.159 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:53.159 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:12:53.159 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:12:53.160 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.6639ms
+2022-08-18 15:12:53.171 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:12:53.171 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:53.171 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.3983ms
+2022-08-18 15:12:53.177 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:12:53.177 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:12:53.240 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 63.0368ms
+2022-08-18 15:13:53.855 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - -
+2022-08-18 15:13:53.857 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:13:53.862 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 15:13:53.884 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 15:13:53.914 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_0 OFFSET @__p_0
+2022-08-18 15:13:53.945 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:13:53.951 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=1 - - - 200 - application/json;+charset=utf-8 95.8426ms
+2022-08-18 15:14:28.400 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=2 - -
+2022-08-18 15:14:28.401 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:14:28.535 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 15:14:28.553 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 15:14:28.573 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_0 OFFSET @__p_0
+2022-08-18 15:14:28.576 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:14:28.586 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=2&pageSize=2 - - - 200 - application/json;+charset=utf-8 186.0635ms
+2022-08-18 15:15:11.564 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:15:11.565 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:15:11.565 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5395ms
+2022-08-18 15:15:11.599 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:15:11.599 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:15:11.600 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:15:11.600 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:15:11.600 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:15:11.601 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.4954ms
+2022-08-18 15:15:11.614 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:15:11.615 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:15:11.615 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 1.1832ms
+2022-08-18 15:15:11.622 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:15:11.622 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:15:11.700 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 77.9428ms
+2022-08-18 15:16:01.230 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:16:01.230 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:01.230 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5892ms
+2022-08-18 15:16:01.240 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:16:01.240 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:01.241 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:16:01.241 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:16:01.241 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:16:01.242 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.6215ms
+2022-08-18 15:16:01.252 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:16:01.252 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:01.252 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4898ms
+2022-08-18 15:16:01.260 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:16:01.261 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:01.361 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 100.4764ms
+2022-08-18 15:16:54.020 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:16:54.021 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:54.021 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.7351ms
+2022-08-18 15:16:54.027 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:16:54.027 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:54.027 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:16:54.028 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:16:54.028 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:16:54.029 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.8392ms
+2022-08-18 15:16:54.042 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:16:54.043 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:54.043 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4380ms
+2022-08-18 15:16:54.052 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:16:54.053 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:16:54.152 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 99.9007ms
+2022-08-18 15:17:02.542 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:17:02.542 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:17:02.542 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4998ms
+2022-08-18 15:17:02.552 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:17:02.552 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:17:02.552 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:17:02.553 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:17:02.553 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:17:02.553 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.5860ms
+2022-08-18 15:17:02.562 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:17:02.562 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:17:02.562 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4905ms
+2022-08-18 15:17:02.630 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:17:02.630 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:17:02.709 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 84.7554ms
+2022-08-18 15:22:49.531 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:22:49.532 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:22:49.532 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.7034ms
+2022-08-18 15:22:49.541 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:22:49.541 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:22:49.542 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:22:49.542 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:22:49.543 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:22:49.543 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.7104ms
+2022-08-18 15:22:49.622 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:22:49.622 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:22:49.622 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4538ms
+2022-08-18 15:22:49.626 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:22:49.627 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:22:49.627 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:22:49.628 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:22:49.719 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 92.3437ms
+2022-08-18 15:31:13.800 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:31:13.801 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:31:13.802 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 1.3048ms
+2022-08-18 15:31:13.809 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:31:13.810 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:31:13.810 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:31:13.810 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:31:13.811 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:31:13.811 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.3581ms
+2022-08-18 15:31:13.830 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist - -
+2022-08-18 15:31:13.831 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:31:13.831 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist - - - 204 - - 0.4422ms
+2022-08-18 15:31:13.841 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist - -
+2022-08-18 15:31:13.841 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:31:13.841 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:31:13.842 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:31:13.970 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist - - - 404 0 - 129.0630ms
+2022-08-18 15:32:02.837 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:32:02.837 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:32:02.837 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4887ms
+2022-08-18 15:32:02.847 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:32:02.847 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:32:02.847 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:32:02.848 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:32:02.848 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:32:02.848 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.2315ms
+2022-08-18 15:32:02.867 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=10 - -
+2022-08-18 15:32:02.867 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:32:02.867 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=10 - - - 204 - - 0.4775ms
+2022-08-18 15:32:02.877 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=10 - -
+2022-08-18 15:32:02.877 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:32:02.878 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:32:02.879 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 15:32:02.973 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 15:32:02.977 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 15:32:02.979 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:32:02.979 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=10 - - - 200 - application/json;+charset=utf-8 102.1800ms
+2022-08-18 15:35:11.488 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:35:11.488 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:11.489 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4485ms
+2022-08-18 15:35:11.495 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:35:11.495 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:11.495 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:35:11.496 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:35:11.496 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:35:11.496 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.2078ms
+2022-08-18 15:35:11.517 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=10 - -
+2022-08-18 15:35:11.517 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:11.518 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=10 - - - 204 - - 0.4547ms
+2022-08-18 15:35:11.529 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=10 - -
+2022-08-18 15:35:11.529 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:11.530 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:35:11.530 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 15:35:11.536 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 15:35:11.541 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 15:35:11.542 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:35:11.542 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=10 - - - 200 - application/json;+charset=utf-8 13.2500ms
+2022-08-18 15:35:24.267 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:35:24.267 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:24.267 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4743ms
+2022-08-18 15:35:24.277 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:35:24.277 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:24.277 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:35:24.278 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:35:24.278 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:35:24.278 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.2508ms
+2022-08-18 15:35:24.356 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 15:35:24.356 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:24.356 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=1 - - - 204 - - 0.3953ms
+2022-08-18 15:35:24.366 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - -
+2022-08-18 15:35:24.366 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:35:24.366 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:35:24.367 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 15:35:24.370 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 15:35:24.375 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 15:35:24.388 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:35:24.447 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=1 - - - 200 - application/json;+charset=utf-8 73.1009ms
+2022-08-18 15:38:21.671 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:38:21.672 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:21.672 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.6545ms
+2022-08-18 15:38:21.680 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:38:21.680 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:21.680 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:38:21.681 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:38:21.681 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:38:21.681 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.1860ms
+2022-08-18 15:38:21.706 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 15:38:21.706 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:21.707 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - - - 204 - - 0.3650ms
+2022-08-18 15:38:21.720 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 15:38:21.720 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:21.720 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:38:21.721 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 15:38:21.824 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 15:38:21.830 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 15:38:21.832 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:38:21.835 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 115.5351ms
+2022-08-18 15:38:29.616 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 15:38:29.616 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:29.617 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5570ms
+2022-08-18 15:38:29.626 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 15:38:29.627 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:29.627 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 15:38:29.627 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 15:38:29.628 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 15:38:29.628 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.6610ms
+2022-08-18 15:38:29.638 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 15:38:29.638 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:29.639 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - - - 204 - - 0.4223ms
+2022-08-18 15:38:29.647 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 15:38:29.647 -03:00 [INF] CORS policy execution successful.
+2022-08-18 15:38:29.647 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 15:38:29.648 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 15:38:29.656 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 15:38:29.661 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 15:38:29.662 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 15:38:29.662 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 15.1854ms
+2022-08-18 16:10:21.635 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:10:21.637 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:10:21.638 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 3.0001ms
+2022-08-18 16:10:21.642 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 16:10:21.643 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:10:21.643 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:10:21.643 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 16:10:21.643 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:10:21.644 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.4328ms
+2022-08-18 16:10:21.653 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:10:21.653 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:10:21.653 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - - - 204 - - 0.5774ms
+2022-08-18 16:10:21.659 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:10:21.660 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:10:21.660 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 16:10:21.661 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 16:10:21.678 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 16:10:21.682 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 16:10:21.682 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 16:10:21.682 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 22.7144ms
+2022-08-18 16:11:24.606 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:11:24.606 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:24.606 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.6025ms
+2022-08-18 16:11:24.633 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 16:11:24.634 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:24.634 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:11:24.634 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 16:11:24.635 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:11:24.635 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.3992ms
+2022-08-18 16:11:24.645 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:11:24.645 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:24.646 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - - - 204 - - 0.7398ms
+2022-08-18 16:11:24.649 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:11:24.650 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:24.658 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 16:11:24.659 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 16:11:24.665 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 16:11:24.675 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 16:11:24.734 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 16:11:24.828 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 110.8251ms
+2022-08-18 16:11:28.815 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 16:11:28.815 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:28.815 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:11:28.815 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 16:11:28.816 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:11:28.816 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.3108ms
+2022-08-18 16:11:28.826 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:11:28.827 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:28.827 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 16:11:28.828 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 16:11:28.830 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 16:11:28.835 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 16:11:28.835 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 16:11:28.835 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 9.0265ms
+2022-08-18 16:11:48.259 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:11:48.260 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:48.260 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4536ms
+2022-08-18 16:11:48.262 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 16:11:48.263 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:48.267 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:11:48.267 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 16:11:48.281 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:11:48.289 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 26.2519ms
+2022-08-18 16:11:48.297 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:11:48.298 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:48.298 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - - - 204 - - 0.6652ms
+2022-08-18 16:11:48.301 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:11:48.301 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:11:48.302 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 16:11:48.302 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 16:11:48.304 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 16:11:48.328 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 16:11:48.329 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 16:11:48.330 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 28.8796ms
+2022-08-18 16:12:01.813 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:12:01.813 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:12:01.814 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5079ms
+2022-08-18 16:12:01.815 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 16:12:01.815 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:12:01.816 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:12:01.816 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 16:12:01.816 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:12:01.817 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.4519ms
+2022-08-18 16:12:01.825 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:12:01.825 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:12:01.826 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - - - 204 - - 0.5276ms
+2022-08-18 16:12:01.833 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:12:01.833 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:12:01.834 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 16:12:01.835 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 16:12:01.837 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 16:12:01.842 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 16:12:01.843 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 16:12:01.843 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 10.1039ms
+2022-08-18 16:12:04.982 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 53
+2022-08-18 16:12:04.982 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:12:04.982 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:12:04.983 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 16:12:04.983 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:12:04.984 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 53 - 200 - application/json;+charset=utf-8 1.7091ms
+2022-08-18 16:12:04.997 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:12:04.997 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:12:04.997 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 16:12:04.998 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 16:12:05.003 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 16:12:05.012 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 16:12:05.012 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 16:12:05.013 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 16.0425ms
+2022-08-18 16:14:07.192 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:14:07.192 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:14:07.192 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5059ms
+2022-08-18 16:14:07.198 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 41
+2022-08-18 16:14:07.198 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:14:07.199 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:14:07.249 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:14:07.353 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 41 - 404 0 - 154.9419ms
+2022-08-18 16:14:21.731 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:14:21.731 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:14:21.732 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4435ms
+2022-08-18 16:14:21.739 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 41
+2022-08-18 16:14:21.739 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:14:21.740 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:14:21.741 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:14:21.815 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 41 - 404 0 - 75.3796ms
+2022-08-18 16:14:56.668 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:14:56.668 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:14:56.668 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5175ms
+2022-08-18 16:14:56.671 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 44
+2022-08-18 16:14:56.671 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:14:56.672 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:14:56.682 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:14:56.683 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:14:56.683 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 44 - 401 0 - 11.7882ms
+2022-08-18 16:15:13.368 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:15:13.368 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:15:13.434 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 33.5370ms
+2022-08-18 16:15:13.435 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 39
+2022-08-18 16:15:13.435 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:15:13.435 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:15:13.436 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:15:13.511 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 39 - 404 0 - 76.5366ms
+2022-08-18 16:15:32.547 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:15:32.548 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:15:32.548 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5209ms
+2022-08-18 16:15:32.578 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 39
+2022-08-18 16:15:32.578 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:15:32.578 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:15:32.580 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:15:32.656 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 39 - 404 0 - 78.0306ms
+2022-08-18 16:16:17.937 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:16:17.938 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:16:17.943 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 5.3355ms
+2022-08-18 16:16:17.954 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 46
+2022-08-18 16:16:17.954 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:16:17.955 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:16:17.959 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:16:18.072 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 46 - 404 0 - 117.9720ms
+2022-08-18 16:17:03.632 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:17:03.632 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:17:03.632 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4972ms
+2022-08-18 16:17:03.638 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 48
+2022-08-18 16:17:03.638 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:17:03.638 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:17:03.639 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:17:03.639 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:17:03.639 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 48 - 401 0 - 1.0758ms
+2022-08-18 16:17:13.104 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:17:13.104 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:17:13.104 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5979ms
+2022-08-18 16:17:13.114 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 52
+2022-08-18 16:17:13.114 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:17:13.114 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:17:13.114 -03:00 [INF] Writing value of type 'System.String' with status code '200'.
+2022-08-18 16:17:13.115 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:17:13.115 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 52 - 200 - application/json;+charset=utf-8 1.3415ms
+2022-08-18 16:17:13.124 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:17:13.124 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:17:13.125 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/todolist?page=1&pageSize=2 - - - 204 - - 0.6514ms
+2022-08-18 16:17:13.134 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - -
+2022-08-18 16:17:13.134 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:17:13.134 -03:00 [INF] Executing endpoint 'HTTP: GET /todolist'
+2022-08-18 16:17:13.135 -03:00 [INF] Entity Framework Core 6.0.8 initialized 'TodoList' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.6+6fa8f3c27a7c241a66e72a6c09e0b252509215d0' with options: None
+2022-08-18 16:17:13.152 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM todolist AS t
+2022-08-18 16:17:13.167 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.completo, t.nombre
+FROM todolist AS t
+ORDER BY t.id
+LIMIT @__p_1 OFFSET @__p_0
+2022-08-18 16:17:13.168 -03:00 [INF] Executed endpoint 'HTTP: GET /todolist'
+2022-08-18 16:17:13.168 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7154/todolist?page=1&pageSize=2 - - - 200 - application/json;+charset=utf-8 34.0703ms
+2022-08-18 16:18:48.936 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:18:48.936 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:18:48.936 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 6.4097ms
+2022-08-18 16:18:48.940 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 39
+2022-08-18 16:18:48.941 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:18:48.941 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:18:48.943 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:18:49.076 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 39 - 404 0 - 135.6393ms
+2022-08-18 16:19:02.098 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:19:02.102 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:19:02.102 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 4.8625ms
+2022-08-18 16:19:02.122 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 46
+2022-08-18 16:19:02.122 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:19:02.123 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:19:02.124 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:19:02.232 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 46 - 404 0 - 109.7391ms
+2022-08-18 16:19:13.420 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:19:13.420 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:19:13.421 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4412ms
+2022-08-18 16:19:13.465 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 48
+2022-08-18 16:19:13.465 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:19:13.465 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:19:13.466 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:19:13.466 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:19:13.466 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 48 - 401 0 - 1.0219ms
+2022-08-18 16:21:21.939 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:21:21.946 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:21:21.946 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 6.9017ms
+2022-08-18 16:21:21.953 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 52
+2022-08-18 16:21:21.953 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:21:21.954 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:21:21.954 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:21:21.954 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:21:21.954 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 52 - 401 0 - 1.1585ms
+2022-08-18 16:21:53.061 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:21:53.061 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:21:53.061 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5079ms
+2022-08-18 16:21:53.093 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 52
+2022-08-18 16:21:53.094 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:21:53.094 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:21:53.094 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:21:53.094 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:21:53.094 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 52 - 401 0 - 1.1067ms
+2022-08-18 16:22:29.769 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:22:29.769 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:22:29.769 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4901ms
+2022-08-18 16:22:29.775 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 73
+2022-08-18 16:22:29.775 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:22:29.775 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:22:29.775 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:22:29.776 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:22:29.776 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 73 - 401 0 - 1.2897ms
+2022-08-18 16:23:30.780 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:23:30.780 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:23:30.781 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5765ms
+2022-08-18 16:23:30.790 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 71
+2022-08-18 16:23:30.791 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:23:30.791 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:23:30.792 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:23:30.792 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:23:30.792 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 71 - 401 0 - 1.8315ms
+2022-08-18 16:23:52.690 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:23:52.690 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:23:52.690 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5602ms
+2022-08-18 16:23:52.700 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 71
+2022-08-18 16:23:52.700 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:23:52.700 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:23:52.700 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:23:52.700 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:23:52.701 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 71 - 401 0 - 0.6486ms
+2022-08-18 16:24:13.155 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:24:13.159 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:24:13.160 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 15.7626ms
+2022-08-18 16:24:13.166 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 73
+2022-08-18 16:24:13.166 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:24:13.166 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:24:13.166 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:24:13.166 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:24:13.167 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 73 - 401 0 - 1.0939ms
+2022-08-18 16:25:08.863 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:25:08.864 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:25:08.864 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5734ms
+2022-08-18 16:25:08.868 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 73
+2022-08-18 16:25:08.869 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:25:08.869 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:25:08.869 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:25:08.869 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:25:08.869 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 73 - 401 0 - 0.9640ms
+2022-08-18 16:27:40.902 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:27:40.907 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:27:40.907 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 5.5439ms
+2022-08-18 16:27:40.916 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 48
+2022-08-18 16:27:40.917 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:27:40.917 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:27:40.917 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:27:40.917 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:27:40.917 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 48 - 401 0 - 5.5928ms
+2022-08-18 16:29:37.466 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:29:37.467 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:29:37.467 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 5.1230ms
+2022-08-18 16:29:37.473 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 48
+2022-08-18 16:29:37.473 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:29:37.474 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:29:37.474 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:29:37.474 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:29:37.475 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 48 - 401 0 - 1.7484ms
+2022-08-18 16:30:34.527 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:30:34.527 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:30:34.527 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5382ms
+2022-08-18 16:30:34.532 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 41
+2022-08-18 16:30:34.532 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:30:34.533 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:30:34.534 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:30:34.630 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 41 - 404 0 - 98.0183ms
+2022-08-18 16:30:43.880 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:30:43.881 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:30:43.881 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 1.1460ms
+2022-08-18 16:30:43.890 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 41
+2022-08-18 16:30:43.890 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:30:43.890 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:30:43.891 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:30:43.970 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 41 - 404 0 - 80.2252ms
+2022-08-18 16:30:59.353 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:30:59.353 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:30:59.354 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.7407ms
+2022-08-18 16:30:59.365 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:30:59.366 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:30:59.366 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:30:59.366 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:30:59.366 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:30:59.366 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 3.1126ms
+2022-08-18 16:31:27.340 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:31:27.340 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:31:27.340 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 4.8030ms
+2022-08-18 16:31:27.346 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:31:27.346 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:31:27.347 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:31:27.347 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:31:27.347 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:31:27.347 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.1588ms
+2022-08-18 16:31:55.123 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:31:55.123 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:31:55.123 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.6308ms
+2022-08-18 16:31:55.161 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:31:55.161 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:31:55.161 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:31:55.162 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:31:55.162 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:31:55.162 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.1302ms
+2022-08-18 16:35:25.773 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:35:25.773 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:35:25.773 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.6314ms
+2022-08-18 16:35:25.783 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:35:25.783 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:35:25.783 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:35:25.783 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:35:25.784 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:35:25.784 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.8841ms
+2022-08-18 16:35:50.713 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:35:50.726 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:35:50.727 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 14.1409ms
+2022-08-18 16:35:50.731 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:35:50.731 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:35:50.732 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:35:50.732 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:35:50.732 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:35:50.732 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.3163ms
+2022-08-18 16:36:17.250 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:36:17.250 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:17.251 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 5.2256ms
+2022-08-18 16:36:17.265 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:36:17.266 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:17.266 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:17.266 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:36:17.266 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:17.267 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.2130ms
+2022-08-18 16:36:22.885 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:36:22.885 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:22.886 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4744ms
+2022-08-18 16:36:22.895 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:36:22.896 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:22.896 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:22.896 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:36:22.896 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:22.896 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.8716ms
+2022-08-18 16:36:27.356 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:36:27.356 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:27.357 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4786ms
+2022-08-18 16:36:27.366 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:36:27.366 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:27.367 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:27.367 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:36:27.367 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:27.367 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.9539ms
+2022-08-18 16:36:31.760 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:36:31.761 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:31.761 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4695ms
+2022-08-18 16:36:31.770 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:36:31.771 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:36:31.771 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:31.771 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:36:31.771 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:36:31.771 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.8849ms
+2022-08-18 16:37:16.344 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:37:16.344 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:37:16.345 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4568ms
+2022-08-18 16:37:16.351 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:37:16.351 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:37:16.352 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:37:16.352 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:37:16.352 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:37:16.352 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.2430ms
+2022-08-18 16:37:24.460 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:37:24.460 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:37:24.460 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4870ms
+2022-08-18 16:37:24.513 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:37:24.513 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:37:24.513 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:37:24.513 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:37:24.514 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:37:24.514 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.1230ms
+2022-08-18 16:38:20.052 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:38:20.052 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:38:20.052 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4610ms
+2022-08-18 16:38:20.063 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:38:20.063 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:38:20.063 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:38:20.063 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:38:20.064 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:38:20.064 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 2.0891ms
+2022-08-18 16:38:27.052 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:38:27.056 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:38:27.057 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 4.9220ms
+2022-08-18 16:38:27.062 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:38:27.062 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:38:27.070 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:38:27.070 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:38:27.070 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:38:27.070 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 8.3595ms
+2022-08-18 16:39:57.617 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:39:57.617 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:39:57.618 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.5471ms
+2022-08-18 16:39:57.623 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:39:57.624 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:39:57.624 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:39:57.624 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:39:57.624 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:39:57.625 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.3829ms
+2022-08-18 16:40:05.928 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:40:05.929 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:40:05.929 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4804ms
+2022-08-18 16:40:05.938 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:40:05.939 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:40:05.939 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:40:05.939 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:40:05.939 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:40:05.939 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.9185ms
+2022-08-18 16:40:52.278 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:40:52.278 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:40:52.279 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 1.1543ms
+2022-08-18 16:40:52.284 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:40:52.284 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:40:52.284 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:40:52.284 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:40:52.284 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:40:52.284 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.6529ms
+2022-08-18 16:47:40.865 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:47:40.865 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:47:40.866 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 1.0251ms
+2022-08-18 16:47:40.872 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:47:40.873 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:47:40.873 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:47:40.873 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:47:40.873 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:47:40.873 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.9210ms
+2022-08-18 16:47:47.671 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:47:47.671 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:47:47.695 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 17.2243ms
+2022-08-18 16:47:47.695 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:47:47.696 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:47:47.696 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:47:47.696 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:47:47.696 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:47:47.712 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 12.5548ms
+2022-08-18 16:48:08.317 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:48:08.318 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:48:08.318 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.8323ms
+2022-08-18 16:48:08.324 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:48:08.324 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:48:08.324 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:48:08.324 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:48:08.325 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:48:08.325 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 1.1277ms
+2022-08-18 16:48:14.111 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:48:14.112 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:48:14.112 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4249ms
+2022-08-18 16:48:14.122 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:48:14.122 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:48:14.126 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:48:14.126 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:48:14.126 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:48:14.127 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 5.1323ms
+2022-08-18 16:48:17.544 -03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7154/loggin - -
+2022-08-18 16:48:17.545 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:48:17.545 -03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7154/loggin - - - 204 - - 0.4231ms
+2022-08-18 16:48:17.555 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7154/loggin application/json 43
+2022-08-18 16:48:17.555 -03:00 [INF] CORS policy execution successful.
+2022-08-18 16:48:17.555 -03:00 [INF] Executing endpoint 'HTTP: POST /loggin'
+2022-08-18 16:48:17.555 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 401.
+2022-08-18 16:48:17.555 -03:00 [INF] Executed endpoint 'HTTP: POST /loggin'
+2022-08-18 16:48:17.555 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7154/loggin application/json 43 - 401 0 - 0.9340ms
